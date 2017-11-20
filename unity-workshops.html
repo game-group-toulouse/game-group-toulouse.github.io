@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Game Group Toulouse</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/Semantic-UI-CSS/semantic.css" />
+		<link rel="shortcut icon" href="images/groupgame.ico">
+	</head>
+
+	<body>
+		<div class="ui container">
+
+			<div class="ui left vertical sidebar labeled icon menu">
+				<a class="item" href="index.html">
+					<i class="home icon"></i>Home
+				</a>
+				<a class="item" href="projets.html">
+					<i class="folder open icon"></i>Projets
+				</a>	
+				<a class="item" href="unity-workshops.html">
+					<i class="cube icon"></i>Unity
+				</a>
+				<a class="item" href="unityweek.html">
+					<i class="calendar icon"></i>UnityWeek
+				</a>
+				<a class="item" href="design.html">
+					<i class="write icon"></i>Game Design
+				</a>
+				<a class="item" href="gamegroup.html">
+					<i class="info circle icon"></i>GameGroup
+				</a>
+  			</div>
+			
+			<div id="main">
+				<div class="inner">
+					<div class="ui basic segment">
+						<div class="ui sticky">
+							<div class="ui icon borderless menu">
+								<a class="left item" onclick="affmenu()">
+									<i class="link teal big align justify icon"></i>
+								</a>
+								<div class="right item">
+									<label class="ui teal large label">gamegrouptoulouse@gmail.com</label>
+									<i class="link large teal twitter icon" onclick="goOn('https://twitter.com/GameGroupTlse')"></i>
+									<i class="link large teal github icon" onclick="goOn('https://github.com/game-group-toulouse')"></i>
+								</div>
+							</div>
+						</div>
+
+						<img class="ui centered small image" src="images/logo-unity.png" style="margin-top: 1%">
+						<h1 class="ui center aligned header">
+							Unity Workshops
+						</h1>
+						<div class="ui teal piled segment">
+							<h3 class="ui header">Workshop n°1</h3>
+							<p> Installation des outils nécessaires au développement sur Unity</br>
+								Découverte de l'interface d'Unity et des éléments de base.</p>
+							<button class="ui button">Voir l'activité</button>
+						</div>
+						<div class="ui teal piled segment">
+							<h3 class="ui header">Workshop n°2</h3>
+							<p> Création d'un mini-jeu en 3 dimensions.</br>
+								Le principe: Une tourelle controllée par le joueur qui tire sur des objets statiques.</p>
+							<button class="ui button" onclick="goOn('./workshop1.html')">Voir l'activité</button>
+						</div>
+						<!--<div class="ui teal piled segment">
+							<h3 class="ui header">Workshop n°3</h3>
+							<p> Amélioration du mini-jeu développé lors de l'activité précédente en intégrant une vue FPS (First Person Shooter).</br>
+								Déplacement à l'aide du clavier et contrôle de la caméra à l'aide de la souris.</p>
+							<button class="ui button">Voir l'activité</button>
+						</div>
+						<div class="ui teal piled segment">
+							<h3 class="ui header">Workshop n°4</h3>
+							<p> Intégration d'un menu au mnini-jeu.</br>
+								Découverte de la GUI d'Unity : canvas, buttons, inputs...</p>
+							<button class="ui button">Voir l'activité</button>
+						</div>
+						<div class="ui teal piled segment">
+							<h3 class="ui header">Workshop n°5</h3>
+							<p> Rendre les ennemis vivants.</br>
+								Création d'ennemis basiques qui apparaissent et attaquent le joueur.</br>
+								Intégration de points de vie au joueur et donc indirectement de la mort de ce dernier.</p>
+							<button class="ui button">Voir l'activité</button>
+						</div>
+						<div class="ui teal piled segment">
+							<h3 class="ui header">Workshop n°6</h3>
+							<p> Rendre les ennemis intelligents.</br>
+								Leur procurer un path-finding (astar) pour les rendre plus dangereux. Ces derniers connaissant le chemin le plus rapide pour atteindre le joueur.</br>
+								Intégration d'un score, d'une victoire et d'une défaite.</p>
+							<button class="ui button">Voir l'activité</button>
+						</div>
+						<div class="ui teal piled segment">
+							<h3 class="ui header">Workshop n°7</h3>
+							<p> Ajout d'un tableau des meilleurs scores réalisés.</br>
+								Notion de sauvegarde abordée ainsi que la gestion des passages de variables entre les scènes.</br>
+							<button class="ui button">Voir l'activité</button>
+						</div>-->
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/css/Semantic-UI-CSS/semantic.min.js"></script>></s>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			function affmenu()
+			{
+				$('.ui.labeled.icon.sidebar').sidebar('toggle');
+			}
+			function goOn(addr)
+			{
+				window.location = addr;
+			}
+
+			$('.ui.sticky').sticky();
+
+		</script>
+	</body>
+</html>

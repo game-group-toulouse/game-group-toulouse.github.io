@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Game Group Toulouse</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/Semantic-UI-CSS/semantic.css" />
+		<link rel="shortcut icon" href="images/groupgame.ico">
+	</head>
+
+	
+
+	<body>
+		<div class="ui container">
+
+			<div class="ui left vertical sidebar labeled icon menu">
+				<a class="item" href="index.html">
+					<i class="home icon"></i>Home
+				</a>
+				<a class="item" href="projets.html">
+					<i class="folder open icon"></i>Projets
+				</a>	
+				<a class="item" href="unity-workshops.html">
+					<i class="cube icon"></i>Unity
+				</a>
+				<a class="item" href="unityweek.html">
+					<i class="calendar icon"></i>UnityWeek
+				</a>
+				<a class="item" href="design.html">
+					<i class="write icon"></i>Game Design
+				</a>
+				<a class="item" href="gamegroup.html">
+					<i class="info circle icon"></i>GameGroup
+				</a>
+  			</div>
+			
+			<div id="main">
+				<div class="inner">
+					<div class="ui basic segment">
+						<div class="ui sticky">
+							<div class="ui icon borderless menu">
+								<a class="left item" onclick="affmenu()">
+									<i class="link teal big align justify icon"></i>
+								</a>
+								<div class="right item">
+									<label class="ui teal large label">gamegrouptoulouse@gmail.com</label>
+									<i class="link large teal twitter icon" onclick="goOn('https://twitter.com/GameGroupTlse')"></i>
+									<i class="link large teal github icon" onclick="goOn('https://github.com/game-group-toulouse')"></i>
+								</div>
+							</div>
+						</div>
+
+						<!--<img class="ui centered medium image" src="images/logo-lumberyard.png" style="margin-top: 1%">-->
+						<h1 class="ui center aligned header">
+							UnityWeek Archives
+						</h1>
+						<!--<div class="ui teal piled segment">
+							<h3 class="ui header">1er jour UnityWeek 2017</h3>
+							<p> Découverte de l'interface d'Unity</br>
+								Manipulation d'objects dans une scene.</p>
+							<button class="ui button">Voir l'activité</button>
+						</div>
+						<div class="ui teal piled segment">
+							<h3 class="ui header">2ième jour UnityWeek 2017</h3>
+							<p> Découverte de l'outil d'annimation</br>
+								Utilisation du moteur en 2D et 3D</p>
+							<button class="ui button">Voir l'activité</button>
+						</div>
+						<div class="ui teal piled segment">
+							<h3 class="ui header">3ième jour UnityWeek 2017</h3>
+							<p> L'optimisation d'un jeu ou programme sur Unity.</br>
+								Manipulation de la technique GP-GPU< afin de passer par la carte graphique de l'ordinateur pour effectuer certains calculs graphiques.</p>
+							<button class="ui button">Voir l'activité</button>
+						</div>-->
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/css/Semantic-UI-CSS/semantic.min.js"></script>></s>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			function affmenu()
+			{
+				$('.ui.labeled.icon.sidebar').sidebar('toggle');
+			}
+			function goOn(addr)
+			{
+				window.location = addr;
+			}
+
+			$('.ui.sticky').sticky();
+
+		</script>
+	</body>
+</html>
